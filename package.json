@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "This is a progress plugin of vue",
   "main": "src/index.js",
-  "license": "MIT",
-  "private": true,
   "scripts": {
     "build":"webpack --progress --config webpack.config.js"
   },
@@ -19,5 +17,19 @@
     "vue-style-loader":"^4.1.2",
     "css-loader":"^1.0.0",
     "style-loader":"^0.23.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yangfan2016/vue-yan-progress.git"
+  },
+  "author": "Yangfan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yangfan2016/vue-yan-progress/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue-plugin",
+    "progress-bar"
+  ]
 }
