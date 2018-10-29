@@ -1,59 +1,3 @@
-## yan-progress
-
-This is a progress plugin of vue
-
-### Attention
-此插件还在完善中，暂未发布到`npm`，请先引用`dist`文件夹的文件进行测试开发
-
-### Install
-
-```bash
-$ yarn add yan-progress
-
-```
-or
-
-```html
-<script src="./dist/YanProgress.min.js"></script>
-```
-
-
-### Example
-```html
-<template>
-    <div>
-        <yan-progress :total="100" :done="60" :modify="30" />
-    </div>
-</template>
-```
-
-```js
-import Vue from 'vue';
-import YanProgress from 'yan-progress';
-import App from './App.vue';
-
-Vue.use(YanProgress);
-
-new Vue({
-  el: '#app',
-  render: h => h(App)
-});
-```
-
-### API
-check this file: `src/index.js`
-
-### Contributing
-- Fork this Repo first
-- Clone your Repo
-- Install dependencies by `$ npm install`
-- Checkout a feature branch
-- Feel free to add your features
-- Make sure your features are fully tested
-- Publish your local branch, Open a pull request
-- Enjoy hacking <3
-
-### MIT license
 Copyright (c) 2018 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -73,6 +17,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
----
-built upon love by [docor](https://github.com/turingou/docor.git) v0.3.0
