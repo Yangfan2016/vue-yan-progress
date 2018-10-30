@@ -16,7 +16,8 @@ const CONF = {
 };
 
 let YanProgress = {
-    install(Vue, opts) {
+    install(Vue, opts = {}) {
+
         Vue.component('yan-progress', Object.assign({}, Comp, {
             props: {
                 "total": {
