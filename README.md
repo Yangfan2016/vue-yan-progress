@@ -1,9 +1,7 @@
-## yan-progress
+## yan-progress ![NPM version](https://img.shields.io/npm/v/yan-progress.svg?style=flat)
 
-This is a progress plugin of vue
+> This is a progress plugin of vue
 
-### Attention
-此插件还在完善中，暂未发布到`npm`，请先引用`dist`文件夹的文件进行测试开发
 
 ### Install
 
