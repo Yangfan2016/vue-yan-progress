@@ -16,6 +16,9 @@ or
 <script src="./dist/YanProgress.min.js"></script>
 ```
 
+### Qucik start
+
+Check this file in `index.html`
 
 ### Example
 ```html
@@ -41,11 +44,21 @@ new Vue({
 
 ### API
 
-参数|说明|类型|可选值|默认值
-:--:|:--:|:--:|:--:|:--:|:--:
-total|总数|number|—|— 
-done|已完成数|number|—|— 
-modify|已批改数|number|—|— 
+| 参数 | 说明 | 类型 | 可选值 | 默认值 |
+| :----: | :----: | :----: | :----: | :----: |
+| total | 总数 | number | — | — |
+| done | 已完成数 | number | — | — |
+| modify | 已批改数 | number | — | — |
+| tip | 自定义风格（数组包含3项，依次为：未完成、已提交、已批改的配置，每个项的配置见下面的 iTipConfig）|obejct|—| — |
+
+iTipConfig
+
+| 参数 | 说明 | 类型 | 可选值 | 默认值 |
+| :----: | :----: | :----: | :----: | :----: |
+| text | 提示文字（‘X’为占位符） | string | 同css颜色类型 | — |
+| fillStyle | 进度条的背景色 | string | 同css颜色类型 | — |
+
+
 
 ### Contributing
 - Fork this Repo first
