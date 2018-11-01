@@ -1,7 +1,7 @@
 {
   "name": "yan-progress",
   "version": "1.0.1",
-  "description": "This is a progress plugin of vue",
+  "description": "This is a cascading progress bar plugin based on vue",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --progress --config webpack.config.js"

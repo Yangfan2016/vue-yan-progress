@@ -1,6 +1,6 @@
 ## yan-progress ![NPM version](https://img.shields.io/npm/v/yan-progress.svg?style=flat)
 
-> This is a progress plugin of vue
+> This is a cascading progress bar plugin based on vue
 
 ![yan-progress](https://raw.githubusercontent.com/Yangfan2016/PicBed/master/Blog/yan-progress.gif)
 
