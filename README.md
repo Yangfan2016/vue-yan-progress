@@ -2,6 +2,7 @@
 
 > This is a progress plugin of vue
 
+![yan-progress](https://raw.githubusercontent.com/Yangfan2016/PicBed/master/Blog/yan-progress.gif)
 
 ### Install
 
@@ -39,7 +40,12 @@ new Vue({
 ```
 
 ### API
-check this file: `src/index.js`
+
+参数|说明|类型|可选值|默认值
+:--:|:--:|:--:|:--:|:--:|:--:
+total|总数|number|—|— 
+done|已完成数|number|—|— 
+modify|已批改数|number|—|— 
 
 ### Contributing
 - Fork this Repo first
