@@ -1,4 +1,5 @@
-## yan-progress ![NPM version](https://img.shields.io/npm/v/yan-progress.svg?style=flat)
+## yan-progress 
+[![NPM version](https://img.shields.io/npm/v/yan-progress.svg?style=flat)](https://www.npmjs.com/package/yan-progress)
 
 > This is a cascading progress bar plugin based on vue
 
