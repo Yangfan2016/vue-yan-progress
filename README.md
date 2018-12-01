@@ -53,7 +53,7 @@ Check this file in `index.html`
 iTipConfig
 
 | params | description | type | memo |
-| :----: | :----: | :----: | :----: | :----: |
+| :----: | :----: | :----: | :----: | 
 | text | The tooltip text ('X'is a placeholder) | string | The color type same with CSS |
 | fillStyle | The background color of progress bar | string | The color type same with CSS |
 
