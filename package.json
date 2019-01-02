@@ -4,19 +4,25 @@
   "description": "This is a cascading progress bar plugin based on vue",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack --progress --config webpack.config.js"
+    "build": "webpack --progress --config webpack.config.js",
+    "test": "jest ./test/YanProgress.test.js",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "devDependencies": {
-    "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "babel-loader": "^8.0.2",
-    "vue-loader": "^15.4.2",
-    "vue-template-compiler": "^2.5.17",
-    "vue-style-loader": "^4.1.2",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
     "css-loader": "^1.0.0",
-    "style-loader": "^0.23.1"
+    "jest": "^23.6.0",
+    "style-loader": "^0.23.1",
+    "vue": "^2.5.21",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
   },
   "repository": {
     "type": "git",
@@ -31,5 +37,6 @@
     "vue",
     "vue-plugin",
     "progress-bar"
-  ]
+  ],
+  "dependencies": {}
 }

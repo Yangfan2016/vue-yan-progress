@@ -1,22 +1,25 @@
 <template>
-    <div class="y-progress" v-bind:style="{'background-color':tip[0].fillStyle || '#ccc'}">
-        <a class="y-progress_text" v-bind:style="{'width':(100-donePercent)+'%'}">
-            <span class="y-tooltip" 
-                v-text="tip[0].text.replace('X',total<done?0:(total-done))"></span>
+  <div class="y-progress" :style="{'background-color':tip[0].fillStyle || '#ccc'}">
+    <a class="y-progress_text" :style="{'width':(100-donePercent)+'%'}">
+      <span class="y-tooltip" v-text="tip[0].text.replace('X',total<done?0:(total-done))"></span>
+    </a>
+    <div
+      class="y-progress_bar"
+      :style="{'width':donePercent+ '%','background-color':tip[1].fillStyle || '#9c3'}"
+    >
+      <a class="y-progress_text" :style="{'width':(100-modifyPercent)+'%'}">
+        <span class="y-tooltip" v-text="tip[1].text.replace('X',done>total?total:done)"></span>
+      </a>
+      <div
+        class="y-progress_bar"
+        :style="{'width':modifyPercent+ '%','background-color':tip[2].fillStyle || '#080'}"
+      >
+        <a class="y-progress_text" :style="{'width':'100%'}">
+          <span class="y-tooltip" v-text="tip[2].text.replace('X',modify>done?done:modify)"></span>
         </a>
-        <div class="y-progress_bar" v-bind:style="{'width':donePercent+ '%','background-color':tip[1].fillStyle || '#9c3'}">
-            <a class="y-progress_text" v-bind:style="{'width':(100-modifyPercent)+'%'}">
-                    <span class="y-tooltip" 
-                    v-text="tip[1].text.replace('X',done>total?total:done)"></span>
-            </a>
-            <div class="y-progress_bar" v-bind:style="{'width':modifyPercent+ '%','background-color':tip[2].fillStyle || '#080'}">
-                <a class="y-progress_text" v-bind:style="{'width':'100%'}">
-                    <span class="y-tooltip" 
-            v-text="tip[2].text.replace('X',modify>done?done:modify)"></span>
-                </a>
-            </div>
-        </div>
+      </div>
     </div>
+  </div>
 </template>
 <script>
 export default {
@@ -54,7 +57,6 @@ export default {
   height: 8px;
   background-color: #ccc;
   border-radius: 4px;
-  /* overflow: hidden; */
 }
 .y-progress_bar {
   position: absolute;
