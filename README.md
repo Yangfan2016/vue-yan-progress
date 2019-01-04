@@ -1,5 +1,8 @@
 ## yan-progress 
 [![NPM version](https://img.shields.io/npm/v/yan-progress.svg?style=flat)](https://www.npmjs.com/package/yan-progress)
+[![Build Status](https://travis-ci.org/Yangfan2016/vue-yan-progress.svg?branch=master)](https://travis-ci.org/Yangfan2016/vue-yan-progress)
+[![Coverage Status](https://coveralls.io/repos/github/Yangfan2016/vue-yan-progress/badge.svg)](https://coveralls.io/github/Yangfan2016/vue-yan-progress)
+
 
 > This is a cascading progress bar plugin based on vue
 

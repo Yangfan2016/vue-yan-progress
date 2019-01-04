@@ -37,6 +37,5 @@
     "vue",
     "vue-plugin",
     "progress-bar"
-  ],
-  "dependencies": {}
+  ]
 }

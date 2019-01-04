@@ -22,30 +22,50 @@
   </div>
 </template>
 <script>
+// 0-100(%)
+function calcDonePercent({ total, done }) {
+  if (done <= 0 || total <= 0) {
+    return 0;
+  }
+  if (done > total) {
+    return 1e2;
+  }
+  return (done / total) * 1e2;
+}
+// 0-100(%)
+function calcModifyPercent({ total, done, modify }) {
+  let donePercent = calcDonePercent({ total, done });
+  if (donePercent === 0) {
+    return 0;
+  }
+  if (modify > done) {
+    return 1e2;
+  }
+  return (modify / done) * 1e2;
+}
+
 export default {
   data() {
     return {
       inTotal: this.total,
       inDone: this.done,
       inModify: this.modify,
-      donePercent:
-        this.done == 0
-          ? 0
-          : (this.done >= this.total ? 1 : this.done / this.total) * 100,
-      modifyPercent:
-        this.modify == 0
-          ? 0
-          : (this.modify >= this.done ? 1 : this.modify / this.done) * 100
+      donePercent: calcDonePercent(this),
+      modifyPercent: calcModifyPercent(this)
     };
   },
   watch: {
     done(val) {
-      this.donePercent =
-        val == 0 ? 0 : (val >= this.total ? 1 : val / this.total) * 100;
+      this.donePercent = calcDonePercent({
+        done: val,
+        total: this.total
+      });
     },
     modify(val) {
-      this.modifyPercent =
-        val == 0 ? 0 : (val >= this.done ? 1 : val / this.done) * 100;
+      this.modifyPercent = calcModifyPercent({
+        modify: val,
+        done: this.done
+      });
     }
   }
 };
