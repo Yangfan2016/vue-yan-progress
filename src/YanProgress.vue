@@ -45,13 +45,11 @@ function calcModifyPercent({ total, done, modify }) {
 }
 
 export default {
+  name:'yan-progress',
   data() {
     return {
-      inTotal: this.total,
-      inDone: this.done,
-      inModify: this.modify,
-      donePercent: calcDonePercent(this),
-      modifyPercent: calcModifyPercent(this)
+      donePercent: calcDonePercent(this.$props),
+      modifyPercent: calcModifyPercent(this.$props)
     };
   },
   watch: {
