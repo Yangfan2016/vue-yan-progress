@@ -7,7 +7,6 @@ Vue.use(YanProgress);
 let app;
 let root;
 let Ctor = Vue.options.components['yan-progress'];
-let progressBar;
 let tipTextList;
 let TOTAL;
 let DONE;
